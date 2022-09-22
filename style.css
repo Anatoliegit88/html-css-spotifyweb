@@ -17,13 +17,15 @@ img {
 .container {
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  height: calc(100vh - 90px);
 }
 .box-page {
   display: flex;
   height: calc(100vh - 90px);
-  width: calc(100% - 160px);
+  width: calc(100vw - 160px);
+  position: relative;
 }
 
 .box-nav {
@@ -35,7 +37,6 @@ img {
   width: 160px;
   padding: 1em;
   text-align: start;
-  position: absolute;
 }
 
 .box-footer {
@@ -91,6 +92,7 @@ img {
   height: 80px;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
 }
 .cta {
   display: inline-block;
@@ -106,9 +108,10 @@ img {
 /* LIST SECTION */
 .box-main {
   background-color: rgb(0, 1, 14);
-  display: block;
+  display: inline-block;
   height: calc(100vh - 90px);
-  padding-left: 160px;
+  width: 100%;
+  overflow: auto;
 }
 
 .list-content {
