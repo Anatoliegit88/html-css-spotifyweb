@@ -40,9 +40,11 @@ img {
 }
 
 .box-footer {
-  width: 100%;
   background-color: rgb(32, 32, 33);
   height: 90px;
+  width: 100%;
+  display: flex;
+  align-content: center;
 }
 /* MENU NAV-BAR */
 .div-menu {
@@ -112,8 +114,8 @@ img {
   height: calc(100vh - 90px);
   width: 100%;
   overflow: auto;
+  padding-top: 5em;
 }
-
 .list-content {
   display: flex;
   justify-content: center;
@@ -121,12 +123,10 @@ img {
   padding: 0 8em;
   color: gray;
 }
-
 .list-item {
   display: flex;
   margin-top: 1em;
 }
-
 .recent-played {
   color: white;
   padding: 0.8em;
@@ -141,18 +141,122 @@ img {
   margin-top: 0.3em;
 }
 .images {
-  width: 127px;
   text-align: center;
   padding: 0.5em;
-  /* padding-bottom: 1em; */
 }
 .color-white {
   margin-top: 0.4em;
 }
-/* .second-image {
-  padding-top: 0.2em;
-} */
 .gray-text {
   color: gray;
   padding-left: 0.8em;
+}
+.create-content {
+  display: flex;
+  position: flex-start;
+}
+.other-images {
+  width: calc(34% / 2);
+  justify-content: space-between;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+/* FOOTER */
+/* FOOTER-LEFT */
+.small-img {
+  width: 60px;
+}
+.footer-left {
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.white-title {
+  color: white;
+  padding-left: 0.8em;
+}
+.fa-heart,
+.fa-folder {
+  color: gray;
+  padding-left: 0.8em;
+}
+.fa-heart {
+  padding-left: 3em;
+}
+.small-box {
+  display: flex;
+}
+/* FOOTER-CENTER */
+.footer-center {
+  display: flex;
+  width: calc(100% / 3);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.symbols {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+.player {
+  position: absolute;
+  /* display: inline-block; */
+  /* flex-direction: row; */
+  /* display: inline-block; */
+}
+.time {
+  color: white;
+  font-size: small;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 2.8em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* FOOTER-RIGHT */
+.footer-right {
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1em;
+}
+.hr-volume1 {
+  width: 2em;
+  position: absolute;
+  height: 4px;
+  top: -1px;
+  left: 0;
+  background-color: white;
+  border-radius: 2px;
+}
+.hr-volume2 {
+  width: 7em;
+  background-color: gray;
+}
+.volume-line {
+  position: relative;
+}
+
+.hr-song1 {
+  width: 4em;
+  position: absolute;
+  height: 4px;
+  top: -1px;
+  left: 0;
+  background-color: white;
+  border-radius: 2px;
+}
+.hr-song2 {
+  width: 15em;
+  background-color: gray;
+}
+.song-bar {
+  justify-content: center;
 }
